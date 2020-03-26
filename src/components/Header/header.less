@@ -1,0 +1,56 @@
+.header {
+  height: 110px;
+  width: 100%;
+
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(120, 166, 252);
+
+  .header-title {
+    color: rgb(27, 27, 27);
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .nav {
+    text-align: center;
+    .navLink {
+      margin-left: 16px;
+      padding: 4px 0;
+
+      text-decoration: none;
+      font-size: 18px;
+      color: rgb(27, 27, 27);
+
+      &:hover {
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+      }
+    }
+
+    .active-nav {
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    height: 90px;
+
+    .header-title {
+      font-size: 24px;
+    }
+
+    .navLink {
+      font-size: 12px;
+    }
+  }
+}
